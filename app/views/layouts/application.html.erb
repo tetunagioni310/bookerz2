@@ -22,7 +22,7 @@
             <ul class="navbar-nav ml-auto">
               <% if user_signed_in? %>
               <li>
-                <a class="nav-link text-light" href="#"><i class="fas fa-home"></i> Home </a>
+                <a class="nav-link text-light" href="/users/<%= current_user.id %>"><i class="fas fa-home"></i> Home </a>
               </li>
               <li>
                 <a class="nav-link text-light" href="/users"><i class="fas fa-users"></i> Users </a>
@@ -38,7 +38,7 @@
                 <a class="nav-link text-light" href="/"><i class="fas fa-home"></i> Home </a>
               </li>
               <li>
-                <a class="nav-link text-light" href="/home/about"><i class="fas fa-link"></i> about </a>
+                <a class="nav-link text-light" href="/home/about"><i class="fas fa-link"></i> About </a>
               </li>
               <li>
                 <a class="nav-link text-light" href="/users/sign_up"><i class="fas fa-user-plus"></i> Sign up </a>

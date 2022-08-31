@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def after_sign_out_path_for(resource)
     root_path
   end
+  
+  def current_user?(user)
+    user == current_user
+  end
 end
