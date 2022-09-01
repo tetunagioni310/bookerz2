@@ -1,0 +1,12 @@
+<div id="error_explanation">
+    <% if collection.errors.any? %>
+    <h3><%= pluralize(collection.errors.count, "error")%> prohibited this obj from being saved:</h3>
+    <ul>
+      <% collection.errors.full_messages.each do |message| %>
+      <li>
+        <%= message %>
+      </li>
+      <% end %>
+    </ul>
+    <% end %>
+  </div>
